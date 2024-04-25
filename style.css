@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-grey: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 375px;
+  background-color: var(--White);
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 16px 0 16px;
+}
+
+.wrapper img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+
+.qr-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.qr-content h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  color: var(--Dark-blue);
+}
+
+.qr-content p {
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.1875px;
+  text-align: center;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  color: var(--Grayish-blue);
+}
+/* Attribution Section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
